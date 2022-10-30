@@ -2,6 +2,7 @@ package com.example.agencyapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -15,7 +16,7 @@ LinearLayout btn;
         btn = findViewById(R.id.getstartedbtn);
 
         btn.setOnClickListener(v->{
-            Toast.makeText(this, "getting started", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this,DashboardActivity.class));
         });
     }
 }
